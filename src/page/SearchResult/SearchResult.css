@@ -1,0 +1,3 @@
+.searchResult{position: relative; width: 100%; height: 100vh;}
+.searchResult > .searchResultWrap{position: absolute; width: 100%; height: calc(100vh - 150px); top: 150px;}
+.searchResult > .searchResultWrap:after{content: ''; display: block; clear: both;}

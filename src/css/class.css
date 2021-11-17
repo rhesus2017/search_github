@@ -1,0 +1,3 @@
+.blind{display: none !important; width: 0 !important; height: 0 !important;}
+.initialization{-webkit-appearance: none; -webkit-border-radius: 0;}
+.relative{width: 100%; height: 100%; position: relative;}

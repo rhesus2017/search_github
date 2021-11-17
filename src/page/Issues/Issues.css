@@ -1,0 +1,3 @@
+.issues{position: relative; width: 100%; height: 100vh;}
+.issues > .issuesWrap{position: absolute; width: 100%; height: calc(100vh - 150px); top: 150px;}
+.issues > .issuesWrap:after{content: ''; display: block; clear: both;}

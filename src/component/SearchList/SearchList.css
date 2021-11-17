@@ -1,0 +1,21 @@
+@keyframes fadeIn_searchList {
+    100% { opacity: 1; }
+}
+
+@keyframes fadeIn_searchListWrap {
+    100% { opacity: 1; }
+}
+
+.searchList{float: left; width: 80%; height: 100%; position: relative;}
+.homePage > .searchList{opacity: 0; animation-name: fadeIn_searchList; animation-duration: .5s; animation-delay: 1s; animation-fill-mode: forwards; animation-timing-function: ease;} 
+.searchList > p{position: absolute; top: 5px; left: 40px; font-size: 1.5rem;}
+.searchList > .searchListWrap{width: 100%; height: calc(100% - 40px); overflow: auto; position: relative; padding: 0 30px; margin-top: 40px; border-right: 1px solid #ccc;}
+.searchList > .searchListWrap.true{opacity: 0; animation-name: fadeIn_searchListWrap; animation-duration: .5s; animation-fill-mode: forwards; animation-timing-function: ease;}
+.searchList > .searchListWrap:after{content: ''; display: block; clear: both;}
+.searchList > .searchListWrap > .nonData{position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); font-size: 2rem; font-weight: bold; color: rgba(0, 0, 0, .5);}
+
+.searchList > .loading{width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 11;}
+.searchList > .loading.all{display: block; background: rgba(255, 255, 255, 1);}
+.searchList > .loading.half{display: block; background: rgba(255, 255, 255, .5);}
+.searchList > .loading.none{display: none;}
+.searchList > .loading > div{position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%);}

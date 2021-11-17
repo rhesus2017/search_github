@@ -1,0 +1,15 @@
+
+.searchList .listCard{width: calc((100% - 45px) / 4);}
+.favoriteList .listCard{width: calc(100% + 7px);}
+.listCard{float: left; border: 1px solid #999; border-radius: 4px; margin-right: 15px; padding: 15px; margin-bottom: 15px; position: relative;}
+.listCard:nth-of-type(4n){margin-right: 0;}
+.listCard > .button{position: absolute; top: 13px; right: 13px; cursor: pointer; z-index: 10; width: 20px; height: 20px;}
+.listCard > .button > img{width: 100%; height: 100%;}
+.listCard > a{display: block; width: 90%; height: 25px; font-size: 2rem; color: rgb(9, 105, 218); font-weight: bold; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin-bottom: 10px;}
+.listCard > p{display: block; height: 18px; font-size: 1.4rem; color: #555; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin-bottom: 20px;}
+.listCard > div{display: block; height: 18px; font-size: 1.4rem; color: #bbb; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; line-height: 18px;}
+.listCard > div > span:nth-of-type(1){margin-right: 13px;}
+.listCard > div > span:nth-of-type(2){margin-right: 13px; line-height: 18px;}
+.listCard > div > span:nth-of-type(2) > svg{font-size: 1.4rem; margin-right: 2px;}
+.listCard > div > span:nth-of-type(3){line-height: 18px;}
+.listCard > div > span:nth-of-type(3) > svg{font-size: 1.4rem; margin-right: 4px;}

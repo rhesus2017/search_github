@@ -1,0 +1,102 @@
+@keyframes prevPageSearch_searchInput {
+    50% { top: -305px; height: 140px; transform: translate(-50%, 0); }
+    100% { top: 40%; height: 305px; transform: translate(-50%, -50%); }
+}
+@keyframes prevPageSearch_a {
+    70% { width: 210px; height: 50px; margin: 0 auto 20px; }
+    100% { width: 320px; height: 205px; margin: 0 auto 30px; }
+}
+@keyframes prevPageSearch_logo_02 {
+    70% { visibility: hidden; }
+    100% { visibility: visible; }
+}
+@keyframes prevPageSearch_logo_04 {
+    70% { visibility: visible; }
+    100% { visibility: hidden; }
+}
+
+@keyframes prevPageHome_searchInput {
+    50% { top: -305px; height: 140px; transform: translate(-50%, 0); }
+    100% { top: 10px; height: 140px; transform: translate(-50%, 0); }
+}
+@keyframes prevPageHome_a {
+    70% { width: 210px; height: 50px; margin: 0 auto 20px; }
+    100% { width: 210px; height: 50px; margin: 0 auto 20px; }
+}
+@keyframes prevPageHome_logo_02 {
+    70% { visibility: visible; }
+    100% { visibility: hidden; }
+}
+@keyframes prevPageHome_logo_04 {
+    70% { visibility: hidden; }
+    100% { visibility: visible; }
+}
+
+.searchInput{position: absolute; width: 580px;}
+.searchInput > a{display: block; position: relative;}
+.searchInput > a > .logo_02{display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+.searchInput > a > .logo_04{display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+.searchInput > .inputBox{display: block; width: 100%; height: 44px; border: 1px solid #ccc; border-radius: 20px; position: relative;}
+.searchInput > .inputBox > input{width: calc(100% - 44px); height: 34px; background: none; padding: 0 25px; font-size: 1.6rem; letter-spacing: 1px; line-height: 44px; margin: 5px 0;}
+.searchInput > .inputBox > button{width: 44px; height: 44px; position: absolute; right: 5px; background: none; font-size: 1.6rem; cursor: pointer;}
+.searchInput > p{font-size: 1.4rem; margin-top: 10px; text-align: center;}
+
+.home > .searchInput.homePage{top: 40%; left: 50%; transform: translate(-50%, -50%); height: 305px;}
+.home > .searchInput.homePage > a{width: 320px; height: 205px; margin: 0 auto 30px;}
+.home > .searchInput.homePage > a > .logo_02{visibility: visible;}
+.home > .searchInput.homePage > a > .logo_04{visibility: hidden;}
+
+.home > .searchInput.notFoundPage{top: 40%; left: 50%; transform: translate(-50%, -50%); height: 305px;}
+.home > .searchInput.notFoundPage > a{width: 320px; height: 205px; margin: 0 auto 30px;}
+.home > .searchInput.notFoundPage > a > .logo_02{visibility: visible;}
+.home > .searchInput.notFoundPage > a > .logo_04{visibility: hidden;}
+
+.home > .searchInput.searchResultPage{top: 10px; left: 50%; transform: translate(-50%, 0); height: 140px; animation-name: prevPageSearch_searchInput; animation-duration: 1.5s; animation-fill-mode: forwards; animation-timing-function: ease;}
+.home > .searchInput.searchResultPage > a{width: 210px; height: 50px; margin: 0 auto 20px; animation-name: prevPageSearch_a; animation-delay: .7s; animation-fill-mode: forwards; animation-timing-function: ease;}
+.home > .searchInput.searchResultPage > a > .logo_02{visibility: hidden; animation-name: prevPageSearch_logo_02; animation-delay: .7s; animation-fill-mode: forwards; animation-timing-function: ease;}
+.home > .searchInput.searchResultPage > a > .logo_04{visibility: visible; animation-name: prevPageSearch_logo_04; animation-delay: .7s; animation-fill-mode: forwards; animation-timing-function: ease;}
+
+.home > .searchInput.issuesPage{top: 10px; left: 50%; transform: translate(-50%, 0); height: 140px; animation-name: prevPageSearch_searchInput; animation-duration: 1.5s; animation-fill-mode: forwards; animation-timing-function: ease;}
+.home > .searchInput.issuesPage > a{width: 210px; height: 50px; margin: 0 auto 20px; animation-name: prevPageSearch_a; animation-delay: .7s; animation-fill-mode: forwards; animation-timing-function: ease;}
+.home > .searchInput.issuesPage > a > .logo_02{visibility: hidden; animation-name: prevPageSearch_logo_02; animation-delay: .7s; animation-fill-mode: forwards; animation-timing-function: ease;}
+.home > .searchInput.issuesPage > a > .logo_04{visibility: visible; animation-name: prevPageSearch_logo_04; animation-delay: .7s; animation-fill-mode: forwards; animation-timing-function: ease;}
+
+.searchResult > .searchInput.homePage{top: 40%; left: 50%; transform: translate(-50%, -50%); height: 305px; animation-name: prevPageHome_searchInput; animation-duration: 1s; animation-fill-mode: forwards; animation-timing-function: ease;}
+.searchResult > .searchInput.homePage > a{width: 320px; height: 205px; margin: 0 auto 30px; animation-name: prevPageHome_a; animation-delay: .5s; animation-fill-mode: forwards; animation-timing-function: ease;}
+.searchResult > .searchInput.homePage > a > .logo_02{visibility: visible; animation-name: prevPageHome_logo_02; animation-delay: .5s; animation-fill-mode: forwards; animation-timing-function: ease;}
+.searchResult > .searchInput.homePage > a > .logo_04{visibility: hidden; animation-name: prevPageHome_logo_04; animation-delay: .5s; animation-fill-mode: forwards; animation-timing-function: ease;}
+
+.searchResult > .searchInput.notFoundPage{top: 10px; left: 50%; transform: translate(-50%, 0); height: 140px;}
+.searchResult > .searchInput.notFoundPage > a{width: 210px; height: 50px; margin: 0 auto 20px;}
+.searchResult > .searchInput.notFoundPage > a > .logo_02{visibility: hidden;}
+.searchResult > .searchInput.notFoundPage > a > .logo_04{visibility: visible;}
+
+.searchResult > .searchInput.searchResultPage{top: 10px; left: 50%; transform: translate(-50%, 0); height: 140px;}
+.searchResult > .searchInput.searchResultPage > a{width: 210px; height: 50px; margin: 0 auto 20px;}
+.searchResult > .searchInput.searchResultPage > a > .logo_02{visibility: hidden;}
+.searchResult > .searchInput.searchResultPage > a > .logo_04{visibility: visible;}
+
+.searchResult > .searchInput.issuesPage{top: 10px; left: 50%; transform: translate(-50%, 0); height: 140px;}
+.searchResult > .searchInput.issuesPage > a{width: 210px; height: 50px; margin: 0 auto 20px;}
+.searchResult > .searchInput.issuesPage > a > .logo_02{visibility: hidden;}
+.searchResult > .searchInput.issuesPage > a > .logo_04{visibility: visible;}
+
+.issues > .searchInput.homePage{top: 40%; left: 50%; transform: translate(-50%, -50%); height: 305px; animation-name: prevPageHome_searchInput; animation-duration: 1s; animation-fill-mode: forwards; animation-timing-function: ease;}
+.issues > .searchInput.homePage > a{width: 320px; height: 205px; margin: 0 auto 30px; animation-name: prevPageHome_a; animation-delay: .5s; animation-fill-mode: forwards; animation-timing-function: ease;}
+.issues > .searchInput.homePage > a > .logo_02{visibility: visible; animation-name: prevPageHome_logo_02; animation-delay: .5s; animation-fill-mode: forwards; animation-timing-function: ease;}
+.issues > .searchInput.homePage > a > .logo_04{visibility: hidden; animation-name: prevPageHome_logo_04; animation-delay: .5s; animation-fill-mode: forwards; animation-timing-function: ease;}
+
+.issues > .searchInput.notFoundPage{top: 10px; left: 50%; transform: translate(-50%, 0); height: 140px;}
+.issues > .searchInput.notFoundPage > a{width: 210px; height: 50px; margin: 0 auto 20px;}
+.issues > .searchInput.notFoundPage > a > .logo_02{visibility: hidden;}
+.issues > .searchInput.notFoundPage > a > .logo_04{visibility: visible;}
+
+.issues > .searchInput.searchResultPage{top: 10px; left: 50%; transform: translate(-50%, 0); height: 140px;}
+.issues > .searchInput.searchResultPage > a{width: 210px; height: 50px; margin: 0 auto 20px;}
+.issues > .searchInput.searchResultPage > a > .logo_02{visibility: hidden;}
+.issues > .searchInput.searchResultPage > a > .logo_04{visibility: visible;}
+
+.issues > .searchInput.issuesPage{top: 10px; left: 50%; transform: translate(-50%, 0); height: 140px;}
+.issues > .searchInput.issuesPage > a{width: 210px; height: 50px; margin: 0 auto 20px;}
+.issues > .searchInput.issuesPage > a > .logo_02{visibility: hidden;}
+.issues > .searchInput.issuesPage > a > .logo_04{visibility: visible;}
